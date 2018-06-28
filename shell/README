@@ -1,0 +1,36 @@
+# README
+# Author: Yimou Cao
+
+
+## Compile:
+type 'make' to compile
+If you want to see some debug information, type 'make debug'. (Of course make sure 'make clean' firstly)
+
+
+## Features:
+command execution
+pipe
+file redirection
+background execution
+builtin commands like help, about, (builtin commands also support pipe and redirection)
+
+
+## Not required by professor but implemented:
+change working directory (but cd ~ not implemented)
+file redirectio append (>>)
+
+## Not required by professor
+change working directory
+file redirectio append (>>)
+
+## Brief idea
+The basic idea of this application is that grouping tokens which form a command and liking (piped) commands together
+by a linked list, and then executing those command by forking child processes through a recursive function. More details
+are expained in comment blocks of source files.
+
+## Files:
+bool.h 					define bool type
+builtins.h, builtins.c  builtins commands like help, about, cd
+executor.h, executor.c  executor of structured commands
+parser.h, parser.c      parser for one line input
+main.h, main.c          entrance and control of the whole application

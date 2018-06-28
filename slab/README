@@ -1,0 +1,7 @@
+# Author: Yimou Cao
+
+A slab allocator library in user-space.
+The memory allocation is done by malloc().
+
+If mem_pool_size is smaller than 41MB, not all 41 classes will be created.
+

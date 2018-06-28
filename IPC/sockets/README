@@ -1,0 +1,30 @@
+# README
+# Author: Yimou Cao
+
+# UNIX DOMAIN SOCKET
+
+## Compile:
+type 'make' to compile
+
+## Usage:
+-m, specify how many millions of messages to be sent
+Example: ./main -m 3
+
+## Files:
+utils.h, utils.c                utility functions including parse command line args and get time
+main.c                          entrance and control of the whole application
+
+## Metrics:
+(the duration is from start of sending to end of receiving)
+(no. of messages is millions)
+No. msgs    duration(s) throughput(million msg per second)
+1           0.540084    1.851563
+1           0.960712    1.040894
+2           1.058791    1.888947
+2           1.292685    1.547168
+3           2.093306    1.433140
+3           1.547436    1.938691
+10          5.311069    1.882860
+10          5.547436    1.818377
+100         51.130648   1.955774
+100         50.376592   1.985049

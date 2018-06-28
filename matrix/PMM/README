@@ -1,0 +1,12 @@
+# README
+- Author: Yimou Cao
+
+The program can accept arguments from the command line strictly in the following order:
+Matrix size, Number of threads
+
+E.g. ./main 3 4
+The program would generate 2 3x3 matrices with random number and calculate their multiplication result.
+For the parallel version of it, 4 threads would be spawned to carry out the tasks
+
+If no arguments passed through command line, the defaul values of them are 2, 2 respectively.
+E.g. ./main is equal to ./main 2 2

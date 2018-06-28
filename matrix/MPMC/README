@@ -1,0 +1,21 @@
+# README
+# An implementation of Multiple Producers - Multiple Consumers Problem
+
+The program can accept arguments from command line in the following way:
+./main [Number_Producers Number_Consumers Max_Sleep_Seconds Total_Number_Items2Produce Ring_Buffer_Size]
+
+Such as:
+./main 3 2 1 32 128
+This command would set:
+Number_Producers: 3
+Number_Consumers: 2
+Max_Sleep_Seconds: 1
+Total_Number_Items2Produce: 32
+Ring_Buffer_Size: 128
+
+By default these parameters have values:
+Number_Producers: 1
+Number_Consumers: 1
+Max_Sleep_Seconds: 1
+Total_Number_Items2Produce: 32
+Ring_Buffer_Size: 128

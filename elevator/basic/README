@@ -1,0 +1,21 @@
+FILE: README
+Author: Yimou Cao
+
+# Basic Version of Elevator simulator
+Each elevator only serves one person at a time
+
+The program can accept arguments in command line stricly in this order:
+	 number of elevators: > 0
+	 number of floor: >0
+	 how often people arrive: in seconds per person
+	 evlevator speed: e seconds per floor
+	 total time to simulate: s seconds
+	 seed of the random function
+
+If no argument is specified, the program would run with default values as following:
+	 number of elevators: 5
+	 number of floor: 10
+	 how often people arrive: 5
+	 evlevator speed: 1
+	 total time to simulate: 30
+	 seed: 233666

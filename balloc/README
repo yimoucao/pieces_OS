@@ -1,0 +1,11 @@
+# README
+# Author: Yimou Cao
+
+main.c file contains come tests for the feature of aligned blocks allocation
+balloc.h file contains declarations and expose these as interfaces to users
+balloc.c file contains detailed implementation of those interfaces
+
+How to use:
+Like examples in main.c file, be sure to include balloc.h in your source file and add balloc.o in your makefile when you want to integrate these features into your application.
+
+Error messages would print on the screen if some operations failed. Since return type and input parameters of functions are fixed according to the assignment, there's no place for me to return error codes that I have to print out errors to expose them to users.

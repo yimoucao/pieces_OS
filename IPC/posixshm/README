@@ -1,0 +1,37 @@
+# README
+# Author: Yimou Cao
+
+# POSIX SHM
+
+## Compile:
+type 'make' to compile
+
+## Usage:
+-m, specify how many millions of messages to be sent
+Example: ./main -m 3
+
+## Files:
+main.c                          entrance and control of the whole application
+utils.h, utils.c                utility functions including parse command line args and get time
+ringbuffer.h, ringbuffer.c      the underlying datastructure for process to do communications
+
+## Metrics:
+(the duration is from start of sending to end of receiving)
+(no. of messages is millions)
+No. msgs    duration(s) throughput(million msg per second)
+1           0.090541    11.044734
+1           0.097032    10.305871
+2           0.471098     4.245400
+2           0.193533    10.334158
+2           0.178144    11.226874
+3           0.579153     5.179980
+3           0.264428    11.345248
+3           0.391628     7.660330
+10          2.091782     4.780613
+10          2.752423     3.633162
+10          0.875965    11.415983
+10          0.939348    10.645682
+100         8.866206    11.278782
+100         9.332683    10.715032
+100         9.584510    10.433501
+100        11.225718    8.908116
